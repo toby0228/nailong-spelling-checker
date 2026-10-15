@@ -8,8 +8,8 @@ Retain the [English](TESTING.md) and [Chinese](TESTING.zh-CN.md) checklists for 
 
 ## Before the first public upload
 
-- MIT selected for code and documentation; see LICENSE.
-- The owner confirmed artwork redistribution permission; see [artwork provenance](../ARTWORK.md). Artwork is excluded from MIT. Reference files are excluded from Git.
+- MIT selected for code, documentation and the included AI-generated sprite atlas; see LICENSE.
+- The owner confirmed permission to distribute and license the AI-generated sprites under MIT; see [artwork provenance](../ARTWORK.md). Reference files are excluded from Git.
 - Review the proposed files for personal data. Build output, runtime state and dependencies are ignored.
 - Record a version and the tested environment in the release description.
 - Check the repository preview, setup links and both documentation languages.

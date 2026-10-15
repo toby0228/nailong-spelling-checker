@@ -84,9 +84,9 @@ Main folders: `Sources/` for the native app, `BrowserExtension/` for the browser
 
 ## Artwork
 
-Character sprites were generated with OpenAI image generation from visual references. The running animation alternates two poses with a bounce. Artwork provenance is recorded in [ARTWORK.md](ARTWORK.md).
+The included sprite atlas was generated entirely with AI image generation. The running animation alternates two poses with a bounce. See [ARTWORK.md](ARTWORK.md) for the prompt and provenance.
 
-Local build output, runtime files and reference archives are excluded from the repository. See the license and artwork terms below before reusing the project.
+Local build output, runtime files and reference archives are excluded from the repository. Source code, documentation and the AI-generated sprite atlas are covered by the MIT license below.
 
 ---
 
@@ -94,4 +94,4 @@ Local build output, runtime files and reference archives are excluded from the r
 
 ## License
 
-Source code and documentation are licensed under [MIT](LICENSE). Character artwork is excluded; see [artwork terms](ARTWORK.md).
+The source code, documentation and included AI-generated sprite artwork are licensed under [MIT](LICENSE).
