@@ -2,7 +2,7 @@
 
 The Nailong sprite atlas in `Assets/nailong-atlas.png` was generated entirely with OpenAI's image generation tool. No manually drawn or photographic image layers were added to the sprite atlas. The prompts described Nailong's appearance and poses, using supplied visual references as guidance for the generated result.
 
-The sprite atlas is included under the project MIT License, with permission from the project owner. The MIT license text in [LICENSE](LICENSE) explicitly includes the source, documentation and included AI-generated artwork. The running poses are similar; the prototype alternates them with a bounce rather than a fully articulated run cycle.
+The project owner has chosen to license the sprite atlas under the same MIT License as the rest of this repository. The repository [LICENSE](LICENSE) applies to the source, documentation and included AI-generated artwork. The running poses are similar; the prototype alternates them with a bounce rather than a fully articulated run cycle.
 
 ## Generation prompt
 
