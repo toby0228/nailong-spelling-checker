@@ -1,6 +1,6 @@
 # Nailong · Your little desktop proofreader
 
-[Website & setup guide](https://toby0228.github.io/nailong/)
+[Website & setup guide](https://toby0228.github.io/nailong-spelling-checker/)
 
 **English** · [点击这里切换到中文](README.zh-CN.md) · [Open the setup guide](START-HERE.html)
 
@@ -16,7 +16,7 @@ Nailong is currently shared as source code, not as a notarized app installer. To
 2. In Terminal, download the source and enter its folder:
 
    ```bash
-   git clone https://github.com/toby0228/nailong.git
+   git clone https://github.com/toby0228/nailong-spelling-checker.git
    cd nailong
    ```
 

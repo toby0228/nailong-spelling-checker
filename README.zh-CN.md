@@ -1,6 +1,6 @@
 # 奶龙 · 你的桌面拼写小助手
 
-[在线入门指南](https://toby0228.github.io/nailong/START-HERE.zh-CN.html)
+[在线入门指南](https://toby0228.github.io/nailong-spelling-checker/START-HERE.zh-CN.html)
 
 [Click here to switch to English](README.md) · **中文** · [打开入门指南](START-HERE.zh-CN.html)
 
@@ -16,7 +16,7 @@
 2. 在终端下载源代码并进入项目文件夹：
 
    ```bash
-   git clone https://github.com/toby0228/nailong.git
+   git clone https://github.com/toby0228/nailong-spelling-checker.git
    cd nailong
    ```
 
