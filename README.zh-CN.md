@@ -8,20 +8,36 @@
 
 **macOS 14.2+ · 美式英文拼写 · 本地处理。** Google Docs 和视觉扫描使用 OCR，支持情况因编辑器和显示设置而异。
 
-## 先试试内置练习区
+## 从源代码安装（无需付费开发者会员）
 
-1. 下载或克隆本仓库。如果下载的是 ZIP，请先解压，并保留整个文件夹。
-2. 双击 `Start-Nailong.command`。如果还没有编译好的应用，启动器会先编译再打开；之后直接使用已有版本。
-3. 在设置窗口点击 **Try the playground**。这是最简单的首次体验，不需要浏览器扩展或额外隐私权限。
-4. 输入 `This is a beautifull day. `，末尾加一个空格。奶龙应跑向 **beautifull**；把它改成 **beautiful**，奶龙就会回家。
+目前奶龙以源代码形式提供，并非已经公证的应用安装包。要在自己的 Mac 上编译并运行：
+
+1. 需要 macOS 14.2 或更新版本。如尚未安装 Apple 免费的 Xcode Command Line Tools，请打开终端并运行 `xcode-select --install`。
+2. 在终端下载源代码并进入项目文件夹：
+
+   ```bash
+   git clone https://github.com/toby0228/nailong.git
+   cd nailong
+   ```
+
+3. 在终端运行启动脚本：
+
+   ```bash
+   bash Run.command
+   ```
+
+   首次运行会从当前源代码编译奶龙并打开应用。之后在同一文件夹再次运行，即可打开已有版本。不要在 Finder 中双击下载的 `.command` 文件；macOS 可能会拦截未签名和未公证的脚本。在终端中运行可以避开 Finder 对脚本的启动拦截，但生成的应用仍没有 Developer ID 签名或公证。运行前请查看公开源代码。如果 macOS 提示应用“会损害电脑”，请停止操作，不要强行打开。
+
+4. 在奶龙设置窗口点击 **Try the playground**。第一次试用不需要浏览器扩展或额外隐私权限。
+5. 输入 `This is a beautifull day. `，末尾加一个空格。奶龙应跑向 **beautifull**；改为 **beautiful** 后，它会回到待机位置。
 
 拖动奶龙可以设置待机位置。右键点击宠物，或点击菜单栏里的黄色图标，可以打开控制菜单。HTML 入门页面只提供说明，不会启动桌面应用。
 
-## 首次编译前
+## 编译和启动帮助
 
-编译需要 Xcode Command Line Tools。如果尚未安装，打开终端，运行 `xcode-select --install`，完成 macOS 安装提示后再次启动奶龙。
+如果提示缺少 Swift 或 Xcode Command Line Tools，请运行 `xcode-select --install`，完成 macOS 安装后，再次运行 `bash Run.command`。请把项目放在可写入的文件夹中；编译产物会放在 `build/`。
 
-如果启动脚本无法运行，打开终端，输入 `cd `，把解压后的项目文件夹拖进终端，按回车。运行 `bash build.sh`，然后打开 `build/Nailong.app`。已有编译版本时可直接打开该应用。请仅打开来源可信的开发版本；macOS 可能要求在“隐私与安全性”中确认。
+用户从源代码自行编译运行无需加入 Apple Developer Program。应用采用本地开发用的 ad-hoc 签名。辅助功能和屏幕录制是可选的，只有对应功能才需要开启。要提供已签名并经公证的一键安装包，需要 Developer ID 证书；该证书需要加入 Apple 付费 Developer Program。
 
 ## 选择使用场景
 

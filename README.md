@@ -8,20 +8,36 @@ Nailong is a draggable macOS desktop pet. When it detects a suspected English sp
 
 **macOS 14.2+ · English (US) spelling · Local processing.** Google Docs and visual scans use OCR; support varies by editor and display setup.
 
-## Start with the playground
+## Install from source (no paid developer account required)
 
-1. Download or clone this repository. If you download a ZIP, extract it first and keep the whole folder together.
-2. Double-click `Start-Nailong.command`. It builds the app if needed, then opens it. Later launches reuse the existing build.
-3. In the setup window, click **Try the playground**. This is the easiest first test and needs no browser extension or extra privacy permissions.
-4. Type `This is a beautifull day. ` with a space at the end. Nailong should run to **beautifull**. Change it to **beautiful** to send it home.
+Nailong is currently shared as source code, not as a notarized app installer. To build and run it on your Mac:
+
+1. Use macOS 14.2 or newer. Install Apple’s free Xcode Command Line Tools if needed by opening Terminal and running `xcode-select --install`.
+2. In Terminal, download the source and enter its folder:
+
+   ```bash
+   git clone https://github.com/toby0228/nailong.git
+   cd nailong
+   ```
+
+3. Run the launcher from Terminal:
+
+   ```bash
+   bash Run.command
+   ```
+
+   The launcher builds Nailong from the checked-out source the first time and opens it. Run it again from the same folder to launch the existing build. Do not double-click the downloaded `.command` file in Finder; macOS may block downloaded scripts that are not signed and notarized. Terminal invocation avoids Finder’s script-launch warning, but does not make the resulting app Developer ID signed or notarized. Review the public source before running it. If macOS says the app **will damage your computer**, stop and do not override that alert.
+
+4. In Nailong’s setup window, click **Try the playground**. No browser extension or extra privacy permission is needed for this first test.
+5. Type `This is a beautifull day. ` with a space at the end. Nailong should run to **beautifull**. Change it to **beautiful** to send it home.
 
 Drag Nailong to choose its resting spot. Right-click the pet, or use the yellow menu-bar icon, to open its controls. Opening the HTML guide only shows instructions; it does not start the desktop app.
 
-## Before the first build
+## First build and launch help
 
-Building requires Xcode Command Line Tools. If they are missing, open Terminal, run `xcode-select --install`, finish the macOS installer, and launch Nailong again.
+If the build says Swift or Xcode Command Line Tools are missing, run `xcode-select --install`, finish the macOS installer, then run `bash Run.command` again. Keep the project folder in a location you can write to; the build creates the app in `build/`.
 
-If the launcher cannot run, open Terminal, type `cd `, drag the extracted project folder into Terminal, and press Return. Run `bash build.sh`, then open `build/Nailong.app`. For an existing build, open that app directly. Only open a downloaded development build if you trust its source; macOS may require approval in Privacy & Security.
+The app is ad-hoc signed for local development. When users build it themselves from the source, no Apple Developer Program membership is required. Accessibility and Screen Recording permissions are optional and only needed for the matching features below. A signed and notarized one-click download requires a Developer ID certificate, which is available through Apple’s paid Developer Program.
 
 ## Choose where to use it
 

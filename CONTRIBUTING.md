@@ -2,7 +2,7 @@
 
 ## Development setup
 
-Use macOS 14.2 or newer with Xcode Command Line Tools. Open the repository in VS Code, then run `bash build.sh`. Launch `build/Nailong.app` to try the app. Rebuilding may require renewed macOS privacy permissions.
+Use macOS 14.2 or newer. Xcode Command Line Tools are free and required to build. From the repository folder, run `bash Run.command` to build and launch the app. No paid Apple developer membership is needed for a local source build. The app uses an ad-hoc development signature; distributing a one-click public download requires Developer ID signing and Apple notarization. Rebuilding may require renewed macOS privacy permissions.
 
 For browser checks, install Node.js and Google Chrome, then run `npm install --no-save playwright` in the repository. Run `bash Tests/run-tests.sh` for native, bridge and isolated browser checks. `CHROME_PATH` can select another Chrome executable; `PLAYWRIGHT_PATH` can select an existing Playwright module. These checks use fixtures and do not replace live editor checks.
 
