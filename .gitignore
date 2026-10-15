@@ -1,0 +1,11 @@
+# Generated builds and local state
+build/
+runtime/
+node_modules/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+# Local reference images and historical one-off scripts
+References/

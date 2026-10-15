@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Nailong \u2014 local typo companion",
+  "version": "0.3.0",
+  "description": "Connect focused website editors to your local Nailong desktop pet. No cloud service.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1KWYIF3xl+L46otJqeeUWmI2FemGYG90NfFQSFpyRxDmfobNfkos4miV6+C2UQ7LpqBUHH32MZsV8cdZdaGLvj8apvMs7wdou9Y4XRYaOd3Y+KClUNlv4uSEa05q9nRNZl2WS2Nqr/W1RA+ywwwY3+9EfMkZzzMBBQ+3yrmliBMrD6QL3vFLoMNLmnHpzlSiiwthHRuqd25R76peEqYvKObxukREKVVCrAggltBRwrjmdHSGdoOpSyL9Iw/L6uNHC9CjfIrWIbpiTtLjOIaRW+s04RDjhAxi4ySSYMDeDgGyHnj/KhH+Ina/Tsv4Y1vbCSRozFdlVkcSEgS6dRYmowIDAQAB",
+  "permissions": [
+    "nativeMessaging",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "docs.js",
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "incognito": "not_allowed"
+}
